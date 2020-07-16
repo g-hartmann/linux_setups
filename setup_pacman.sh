@@ -9,8 +9,8 @@ echo ''
 echo '*** Copy key with CTRL-SHIFT-C and add to github ***'
 
 cd ~
-git init
 echo '*** adding hartmann.gregor@outlook.com to git config ***'
+git init
 git config --global user.email "hartmann.gregor@outlook.com"
 git config --global user.name "Gregor Hartmann"
 git fetch
