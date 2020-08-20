@@ -1,8 +1,5 @@
 sudo apt update && sudo apt upgrade
-sudo apt install vim
-sudo apt install git
-sudo apt install cmake
-sudo apt install openssh
+sudo apt install vim git cmake openssh python3
 
 if [ ! -f $HOME/.ssh/id_rsa ]; then
 	ssh-keygen -b 4096
@@ -21,8 +18,8 @@ git fetch
 git reset origin/master
 git submodule update --init --recursive
 # git restore ~/.gitmodules
-git restore ~/.vim/vimrc
-git restore ~/.bashrc
+git checkout ~/.vim/vimrc
+git checkout ~/.bashrc
 git pull
 
 cd ~/.vim/bundle/YouCompleteMe/
